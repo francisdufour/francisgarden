@@ -1,0 +1,11 @@
+views:
+  - type: cards
+    name: Gallerie
+    filters:
+      and:
+        - Type == "Visual note"
+        - "!image.isEmpty()"
+    order:
+      - file.name
+    image: note.image
+    imageAspectRatio: 0.8
